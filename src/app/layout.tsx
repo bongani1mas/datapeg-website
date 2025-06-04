@@ -25,9 +25,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <main className="max-w-6xl mx-auto p-6">{children}</main>
 
-        <footer className="bg-gray-100 text-center text-sm p-4 mt-10">
-          &copy; {new Date().getFullYear()} DataPEG (Pty) Ltd. All rights reserved.
+        <footer className="bg-gray-100 text-center text-sm p-4 mt-10 text-gray-600">
+          &copy; {new Date().getFullYear()} <a href="https://datapeg.co.za" className="text-blue-600 hover:underline">DataPEG (Pty) Ltd</a>. All rights reserved.
         </footer>
+
       </body>
     </html>
   )
