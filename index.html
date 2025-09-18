@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DataPEG — Data Engineering & Analytics Consultancy</title>
+  <meta name="description" content="DataPEG helps companies design robust data platforms on Microsoft Fabric & Azure: ingestion, modeling, performance tuning, and BI.">
+  <meta property="og:title" content="DataPEG — Data Engineering & Analytics Consultancy">
+  <meta property="og:description" content="We build scalable data platforms on Microsoft Fabric & Azure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.datapeg.co.za/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth scrolling */
+    html { scroll-behavior: smooth; }
+    /* Hide the honeypot field */
+    .hp { position: absolute; left: -5000px; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#home" class="flex items-center gap-2 font-semibold">
+          <img src="/assets/logo.svg" alt="DataPEG" class="h-7 w-7" />
+          <span>DataPEG</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-slate-600">Services</a>
+          <a href="#work" class="hover:text-slate-600">Work</a>
+          <a href="#about" class="hover:text-slate-600">About</a>
+          <a href="#contact" class="hover:text-slate-600">Contact</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl border px-3 py-1.5 hover:bg-slate-50">
+            Get in touch
+          </a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-1.5">
+          Menu
+        </button>
+      </div>
+    </div>
+    <!-- Mobile -->
+    <div id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#services" class="block">Services</a>
+        <a href="#work" class="block">Work</a>
+        <a href="#about" class="block">About</a>
+        <a href="#contact" class="block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
+            Build a data platform you can trust.
+          </h1>
+          <p class="mt-5 text-lg text-slate-700">
+            We design, optimise, and operate modern data platforms on Microsoft Fabric and Azure—
+            turning billions of records into reliable insights. Faster pipelines. Better models. Happier stakeholders.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">
+              Start a project
+            </a>
+            <a href="#work" class="inline-flex items-center justify-center rounded-2xl border px-5 py-3 hover:bg-slate-50">
+              See our work
+            </a>
+          </div>
+          <div class="mt-6 text-sm text-slate-500">
+            Trusted for Fabric migrations, Synapse to Lakehouse transitions, performance tuning, and BI delivery.
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[16/10] rounded-3xl border shadow-sm p-4">
+            <div class="h-full w-full grid grid-cols-6 gap-1">
+              <!-- simple decorative "dashboard" blocks -->
+              <div class="col-span-4 bg-slate-100 rounded-lg"></div>
+              <div class="col-span-2 bg-slate-100 rounded-lg"></div>
+              <div class="col-span-2 bg-slate-100 rounded-lg"></div>
+              <div class="col-span-4 bg-slate-100 rounded-lg"></div>
+              <div class="col-span-6 bg-slate-100 rounded-lg"></div>
+            </div>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">Illustration of a simple analytics workspace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold">What we do</h2>
+        <p class="mt-3 text-slate-600">Consulting and delivery across the data lifecycle.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Fabric & Azure Data Platforms</h3>
+          <p class="mt-2 text-sm text-slate-600">OneLake, Lakehouse, Delta, pipelines, SQL endpoints, governance, and cost control.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">ETL/ELT Engineering</h3>
+          <p class="mt-2 text-sm text-slate-600">PySpark/SQL pipelines, schema evolution, robust retry & checkpoint patterns.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Performance & Reliability</h3>
+          <p class="mt-2 text-sm text-slate-600">Query tuning, Delta optimisation, fan‑out join fixes, SLAs, and observability.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Business Intelligence</h3>
+          <p class="mt-2 text-sm text-slate-600">Power BI modelling, DAX, semantic layers, and stakeholder‑ready dashboards.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Cloud Migrations</h3>
+          <p class="mt-2 text-sm text-slate-600">On‑prem SQL/SSIS/Synapse → Fabric. GCP/AWS to Azure paths with minimal downtime.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Advisory & Enablement</h3>
+          <p class="mt-2 text-sm text-slate-600">Architecture reviews, roadmaps, CoP sessions, and training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / highlights -->
+  <section id="work" class="border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold">Selected work</h2>
+        <p class="mt-3 text-slate-600">Outcomes we’re proud of (logos optional later).</p>
+      </div>
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Retail: Microsoft Fabric</h3>
+          <p class="mt-2 text-sm text-slate-600">Stabilised ingest of 10B+ POS records. Faster reporting, reliable promotions analytics.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Financial Services: SQL/SSIS → ADF</h3>
+          <p class="mt-2 text-sm text-slate-600">Modernised ETL, reduced ops toil, improved SLAs and auditability.</p>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Marketing Analytics: Lakehouse</h3>
+          <p class="mt-2 text-sm text-slate-600">Unified ads & CRM data with versioned Delta tables for trustworthy attribution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div class="grid lg:grid-cols-3 gap-10 items-start">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-bold">About DataPEG</h2>
+          <p class="mt-4 text-slate-600">
+            We’re a South African consultancy led by Senior Data Engineer Bongani Maswanganyi.
+            We help teams deliver durable data platforms with clean architecture, versioning, and
+            quality baked in—so the business can move with confidence.
+          </p>
+          <ul class="mt-6 space-y-2 text-slate-700 text-sm list-disc ml-5">
+            <li>Medallion architecture: Bronze → Silver → Gold with Delta CDF.</li>
+            <li>Config‑driven pipelines, schema evolution, checkpoint tables.</li>
+            <li>Performance tuning for joins, file sizes, and partitioning.</li>
+            <li>Power BI semantic models and governance best practices.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Quick facts</h3>
+          <dl class="mt-3 space-y-2 text-sm">
+            <div class="flex justify-between"><dt>HQ</dt><dd>Centurion, Gauteng</dd></div>
+            <div class="flex justify-between"><dt>Cloud</dt><dd>Microsoft Azure & Fabric</dd></div>
+            <div class="flex justify-between"><dt>Also</dt><dd>GCP, AWS</dd></div>
+            <div class="flex justify-between"><dt>Contact</dt><dd><a href="#contact" class="underline">See below</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <h2 class="text-3xl font-bold">Let’s talk</h2>
+      <p class="mt-3 text-slate-600">Tell us about your project. We’ll respond promptly.</p>
+      <form id="contactForm" class="mt-8 grid gap-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border px-4 py-3">
+          <input required type="email" name="email" placeholder="Your email" class="w-full rounded-xl border px-4 py-3">
+        </div>
+        <input type="text" name="company" placeholder="Company (optional)" class="w-full rounded-xl border px-4 py-3">
+        <textarea required name="message" rows="4" placeholder="Project details…" class="w-full rounded-xl border px-4 py-3"></textarea>
+        <div class="hp"><label>Leave this empty</label><input type="text" name="url"></div>
+        <div class="flex items-center gap-3">
+          <button type="submit" class="rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">Send message</button>
+          <a href="mailto:hello@datapeg.co.za" class="text-sm underline">Or email hello@datapeg.co.za</a>
+          <a href="https://wa.me/27600000000" class="text-sm underline" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p id="formMsg" class="text-sm text-slate-600"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500 flex flex-col sm:flex-row gap-3 sm:items-center justify-between">
+      <div>© <span id="year"></span> DataPEG (Pty) Ltd. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#about" class="hover:text-slate-700">About</a>
+        <a href="#services" class="hover:text-slate-700">Services</a>
+        <a href="#contact" class="hover:text-slate-700">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple mailto fallback submit (no backend). Adjust 'to' address to your inbox.
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      if (data.get('url')) return; // honeypot
+
+      const subject = encodeURIComponent('New enquiry from ' + data.get('name'));
+      const body = encodeURIComponent(
+        'Name: ' + data.get('name') + '\n' +
+        'Email: ' + data.get('email') + '\n' +
+        'Company: ' + (data.get('company') || '-') + '\n\n' +
+        (data.get('message') || '')
+      );
+      window.location.href = `mailto:hello@datapeg.co.za?subject=${subject}&body=${body}`;
+      formMsg.textContent = 'Opening your email app to send the message…';
+    });
+  </script>
+</body>
+</html>
