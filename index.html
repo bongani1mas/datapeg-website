@@ -239,49 +239,49 @@
   </footer>
 
   <script>
-  // Mobile nav
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileNav = document.getElementById('mobileNav');
-  if (menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      mobileNav.classList.toggle('hidden');
-    });
-  }
-
-  // Footer year
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Contact form handler
-  const form = document.getElementById('contactForm');
-  const formMsg = document.getElementById('formMsg');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const data = Object.fromEntries(new FormData(form));
-    formMsg.textContent = "Sending…";
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-      });
-
-      if (!res.ok) throw new Error(await res.text());
-
-      // Hide the form
-      form.style.display = "none";
-
-      // Show success message
-      formMsg.textContent = "✅ Thanks! One of our consultants will be in touch shortly.";
-
-    } catch (err) {
-      console.error(err);
-      formMsg.textContent = "❌ Error sending message. Please try again or email info@datapeg.co.za.";
+    // Mobile nav
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
     }
-  });
-</script>
 
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form -> Vercel API -> Resend
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fields = Object.fromEntries(new FormData(form));
+
+      // honeypot
+      if (fields.url) return;
+
+      formMsg.textContent = "Sending…";
+
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: fields.name,
+            email: fields.email,
+            company: fields.company || "-",
+            message: fields.message
+          })
+        });
+        const text = await res.text();
+        if (!res.ok) throw new Error(text || "Failed to send");
+        form.reset();
+        formMsg.textContent = "✅ Thanks! Your message was sent.";
+      } catch (err) {
+        console.error(err);
+        formMsg.textContent = "❌ Error sending message. Please try again or email info@datapeg.co.za.";
+      }
+    });
+  </script>
 </body>
 </html>
