@@ -95,10 +95,16 @@
         </div>
 
         <!-- Right: hero image -->
-        <div class="relative flex justify-center">
-          <img src="/assets/hero.png" alt="DataPEG data platform illustration"
-            class="rounded-3xl border shadow-lg max-w-full h-auto" />
-        </div>
+<div class="relative flex justify-center">
+  <picture>
+    <source srcset="/assets/hero.webp" type="image/webp">
+    <source srcset="/assets/hero.jpg" type="image/jpeg">
+    <img src="/assets/hero.jpg"
+         alt="DataPEG dashboard illustration"
+         class="rounded-3xl border shadow-lg max-w-full h-auto"
+         loading="lazy" width="720" height="480" />
+  </picture>
+</div>
 
       </div>
     </div>
