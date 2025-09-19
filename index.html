@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DataPEG — Data Engineering, Software Engineering & BI</title>
-  <meta name="description" content="DataPEG helps teams build reliable data platforms and software: Azure, AWS, GCP, SQL Server/SSIS/T-SQL, Power BI, and Salesforce integrations.">
+  <meta name="description" content="DataPEG builds dependable data platforms and software across Azure, AWS, GCP and on-prem SQL/SSIS/T-SQL, with BI and Salesforce integrations.">
   <meta property="og:title" content="DataPEG — Data Engineering, Software Engineering & BI">
   <meta property="og:description" content="Cloud & on-prem expertise: Azure, AWS, GCP, SSIS/T-SQL, Fabric, Power BI, Salesforce.">
   <meta property="og:type" content="website">
@@ -12,13 +12,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <style>
     html { scroll-behavior: smooth; }
     .hp { position: absolute; left: -5000px; }
   </style>
 </head>
 <body class="bg-white text-slate-900 antialiased">
-  <!-- Header -->
+  <!-- Header / Nav -->
   <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
@@ -40,7 +42,7 @@
         </button>
       </div>
     </div>
-    <!-- Mobile nav -->
+    <!-- Mobile -->
     <div id="mobileNav" class="md:hidden hidden border-t">
       <div class="px-4 py-3 space-y-2">
         <a href="#services" class="block">Services</a>
@@ -97,7 +99,6 @@
         <h2 class="text-3xl font-bold">What we do</h2>
         <p class="mt-3 text-slate-600">Consulting and delivery across cloud + on-prem, from ingestion to BI.</p>
       </div>
-
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Data Engineering</h3>
@@ -134,34 +135,27 @@
         <h2 class="text-3xl font-bold">Selected work</h2>
         <p class="mt-3 text-slate-600">Cross-industry outcomes we’re proud of.</p>
       </div>
-
       <div class="mt-10 grid lg:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Retail — Fabric Lakehouse</h3>
           <p class="mt-2 text-sm text-slate-600">Stabilised ingest of 10B+ POS records on Microsoft Fabric. Faster reporting and trustworthy promotions analytics.</p>
         </div>
-
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Financial Services — SQL/SSIS → ADF</h3>
           <p class="mt-2 text-sm text-slate-600">Modernised ETL, reduced operational toil, improved SLAs & auditability across regulated datasets.</p>
         </div>
-
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Telecoms — Salesforce Pipelines</h3>
           <p class="mt-2 text-sm text-slate-600">Integrated Salesforce, ads, and CRM data into a unified lakehouse for campaign performance & attribution.</p>
         </div>
-
-        <!-- New: Banking FIC project -->
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Banking — SSIS → FIC Reporting (goAML)</h3>
-          <p class="mt-2 text-sm text-slate-600">Built SSIS-based pipelines to transform and submit transactional reports to the Financial Intelligence Centre (goAML) with schema validation, secure delivery, and auditable run history.</p>
+          <p class="mt-2 text-sm text-slate-600">SSIS pipelines to transform and submit transactional reports to the FIC (goAML) with schema validation, secure delivery, and auditable run history.</p>
         </div>
-
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Healthcare — Cloud Migration & BI</h3>
           <p class="mt-2 text-sm text-slate-600">Lift-and-shift + refactor to Azure/AWS with governed models and exec-ready Power BI dashboards.</p>
         </div>
-
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Cross-Industry — Performance & Reliability</h3>
           <p class="mt-2 text-sm text-slate-600">Fixed fan-out joins, tuned Delta/SQL, implemented checkpoints & observability to meet strict SLAs.</p>
@@ -215,13 +209,21 @@
         </div>
         <input type="text" name="company" placeholder="Company (optional)" class="w-full rounded-xl border px-4 py-3" aria-label="Company">
         <textarea required name="message" rows="4" placeholder="Project details…" class="w-full rounded-xl border px-4 py-3" aria-label="Message"></textarea>
-        <div class="hp"><label>Leave this empty</label><input type="text" name="url" tabindex="-1" autocomplete="off"></div>
+
+        <!-- Honeypot -->
+        <div class="hp"><label>Leave this empty</label><input type="text" name="url"></div>
+
+        <!-- Turnstile widget -->
+        <div class="mt-2">
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAB2NLSNEpHsUk0Kw" data-theme="light"></div>
+        </div>
+
         <div class="flex items-center gap-3">
           <button type="submit" class="rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">Send message</button>
           <a href="mailto:info@datapeg.co.za" class="text-sm underline">Or email info@datapeg.co.za</a>
           <a href="https://wa.me/27813171754" class="text-sm underline" target="_blank" rel="noopener">WhatsApp</a>
         </div>
-        <p id="formMsg" class="text-sm text-slate-600"></p>
+        <p id="formMsg" class="text-sm text-slate-600 mt-2"></p>
       </form>
     </div>
   </section>
@@ -249,16 +251,36 @@
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Contact form -> Vercel API -> Resend
+    // Contact form -> Vercel API -> Resend (+ Turnstile + cooldown)
     const form = document.getElementById('contactForm');
     const formMsg = document.getElementById('formMsg');
+    const COOLDOWN_SEC = 60;
+
+    function lastSubmitAgo() {
+      const t = Number(localStorage.getItem('dp_last_submit') || 0);
+      return Math.floor((Date.now() - t) / 1000);
+    }
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const fields = Object.fromEntries(new FormData(form));
 
-      // honeypot
-      if (fields.url) return;
+      // Cooldown check
+      const ago = lastSubmitAgo();
+      if (ago < COOLDOWN_SEC) {
+        formMsg.textContent = `Please wait ${COOLDOWN_SEC - ago}s before sending again.`;
+        return;
+      }
+
+      // Collect data + honeypot
+      const data = Object.fromEntries(new FormData(form));
+      if (data.url) return;
+
+      // Turnstile token
+      const token = window.turnstile?.getResponse();
+      if (!token) {
+        formMsg.textContent = "Please complete the verification.";
+        return;
+      }
 
       formMsg.textContent = "Sending…";
 
@@ -266,20 +288,21 @@
         const res = await fetch("/api/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: fields.name,
-            email: fields.email,
-            company: fields.company || "-",
-            message: fields.message
-          })
+          body: JSON.stringify({ ...data, __ts_token: token })
         });
-        const text = await res.text();
-        if (!res.ok) throw new Error(text || "Failed to send");
+
+        if (!res.ok) throw new Error(await res.text());
+
+        // Mark cooldown, clear fields, keep form visible
+        localStorage.setItem('dp_last_submit', String(Date.now()));
         form.reset();
-        formMsg.textContent = "✅ Thanks! Your message was sent.";
+        window.turnstile?.reset();
+
+        formMsg.textContent = "✅ Thanks! One of our consultants will be in touch shortly. A confirmation email has been sent.";
       } catch (err) {
         console.error(err);
         formMsg.textContent = "❌ Error sending message. Please try again or email info@datapeg.co.za.";
+        window.turnstile?.reset();
       }
     });
   </script>
