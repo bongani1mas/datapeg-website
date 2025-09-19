@@ -3,7 +3,7 @@
 // === Config ===
 const COOKIE_NAME = 'dp_last_submit';
 const COOLDOWN_SEC = 60; // block rapid repeat submits for 60s
-const FROM_ADDRESS = 'DataPEG <hello@datapeg.co.za>'; // or use no-reply@ if you prefer
+const FROM_ADDRESS = 'DataPEG <info@datapeg.co.za>'; // or use no-reply@ if you prefer
 const INTERNAL_TO = ['info@datapeg.co.za']; // where you receive enquiries
 
 // === Helpers ===
@@ -104,7 +104,7 @@ export default async function handler(req, res) {
       <p style="margin-top:16px">If you need to add anything, just reply to this email.</p>
       <p style="margin-top:16px">— DataPEG</p>
       <p style="color:#64748b;font-size:12px;margin-top:24px">
-        Centurion, Gauteng • info@datapeg.co.za • https://www.datapeg.co.za
+        Johannesburg, Gauteng • info@datapeg.co.za • https://www.datapeg.co.za
       </p>
     </div>
   `;
