@@ -18,7 +18,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: "DataPEG <no-reply@datapeg.co.za>",  // must be verified in Resend
-        to: ["hello@datapeg.co.za"],              // your inbox
+        to: ["info@datapeg.co.za"],              // your inbox
         reply_to: email,
         subject: `Website enquiry from ${name}`,
         html: `
