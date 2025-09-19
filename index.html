@@ -3,24 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DataPEG — Data Engineering & Analytics Consultancy</title>
-  <meta name="description" content="DataPEG helps companies design robust data platforms on Microsoft Fabric & Azure: ingestion, modeling, performance tuning, and BI.">
-  <meta property="og:title" content="DataPEG — Data Engineering & Analytics Consultancy">
-  <meta property="og:description" content="We build scalable data platforms on Microsoft Fabric & Azure.">
+  <title>DataPEG — Data Engineering, Software Engineering & BI</title>
+  <meta name="description" content="DataPEG helps teams build reliable data platforms and software: Azure, AWS, GCP, SQL Server/SSIS/T-SQL, Power BI, and Salesforce integrations.">
+  <meta property="og:title" content="DataPEG — Data Engineering, Software Engineering & BI">
+  <meta property="og:description" content="Cloud & on-prem expertise: Azure, AWS, GCP, SSIS/T-SQL, Fabric, Power BI, Salesforce.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.datapeg.co.za/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Smooth scrolling */
     html { scroll-behavior: smooth; }
-    /* Hide the honeypot field */
     .hp { position: absolute; left: -5000px; }
   </style>
 </head>
 <body class="bg-white text-slate-900 antialiased">
-  <!-- Header / Nav -->
+  <!-- Header -->
   <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
@@ -37,12 +35,12 @@
             Get in touch
           </a>
         </nav>
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-1.5">
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-1.5" aria-label="Open menu">
           Menu
         </button>
       </div>
     </div>
-    <!-- Mobile -->
+    <!-- Mobile nav -->
     <div id="mobileNav" class="md:hidden hidden border-t">
       <div class="px-4 py-3 space-y-2">
         <a href="#services" class="block">Services</a>
@@ -59,11 +57,11 @@
       <div class="grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
-            Build a data platform you can trust.
+            Data Engineering, Software Engineering & Business Intelligence.
           </h1>
           <p class="mt-5 text-lg text-slate-700">
-            We design, optimise, and operate modern data platforms on Microsoft Fabric and Azure—
-            turning billions of records into reliable insights. Faster pipelines. Better models. Happier stakeholders.
+            We build dependable data and software platforms across Azure, AWS, and GCP — and we don’t forget on-prem:
+            SQL Server, SSIS, and T-SQL. From ingestion to insight, our work is fast, reliable, and auditable.
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">
@@ -74,13 +72,12 @@
             </a>
           </div>
           <div class="mt-6 text-sm text-slate-500">
-            Trusted for Fabric migrations, Synapse to Lakehouse transitions, performance tuning, and BI delivery.
+            Data platforms, APIs & microservices, Power BI, Salesforce integrations, Fabric & Delta Lake.
           </div>
         </div>
         <div class="relative">
           <div class="aspect-[16/10] rounded-3xl border shadow-sm p-4">
             <div class="h-full w-full grid grid-cols-6 gap-1">
-              <!-- simple decorative "dashboard" blocks -->
               <div class="col-span-4 bg-slate-100 rounded-lg"></div>
               <div class="col-span-2 bg-slate-100 rounded-lg"></div>
               <div class="col-span-2 bg-slate-100 rounded-lg"></div>
@@ -88,7 +85,6 @@
               <div class="col-span-6 bg-slate-100 rounded-lg"></div>
             </div>
           </div>
-                    <!-- <p class="mt-3 text-xs text-slate-500">Illustration of a simple analytics workspace.</p> -->
         </div>
       </div>
     </div>
@@ -99,56 +95,76 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold">What we do</h2>
-        <p class="mt-3 text-slate-600">Consulting and delivery across the data lifecycle.</p>
+        <p class="mt-3 text-slate-600">Consulting and delivery across cloud + on-prem, from ingestion to BI.</p>
       </div>
+
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">Fabric & Azure Data Platforms</h3>
-          <p class="mt-2 text-sm text-slate-600">OneLake, Lakehouse, Delta, pipelines, SQL endpoints, governance, and cost control.</p>
+          <h3 class="font-semibold">Data Engineering</h3>
+          <p class="mt-2 text-sm text-slate-600">Azure Synapse & Fabric, AWS Redshift/Glue, GCP BigQuery. Delta Lake, schema evolution, versioned pipelines.</p>
         </div>
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">ETL/ELT Engineering</h3>
-          <p class="mt-2 text-sm text-slate-600">PySpark/SQL pipelines, schema evolution, robust retry & checkpoint patterns.</p>
+          <h3 class="font-semibold">On-Prem & Hybrid</h3>
+          <p class="mt-2 text-sm text-slate-600">SQL Server, SSIS, T-SQL, migration to cloud, hybrid landing zones, CDC/CDF and checkpoints.</p>
         </div>
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">Performance & Reliability</h3>
-          <p class="mt-2 text-sm text-slate-600">Query tuning, Delta optimisation, fan‑out join fixes, SLAs, and observability.</p>
+          <h3 class="font-semibold">Software Engineering</h3>
+          <p class="mt-2 text-sm text-slate-600">Python & TypeScript services, REST APIs, serverless (Azure Functions), CI/CD, observability & reliability.</p>
         </div>
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Business Intelligence</h3>
-          <p class="mt-2 text-sm text-slate-600">Power BI modelling, DAX, semantic layers, and stakeholder‑ready dashboards.</p>
+          <p class="mt-2 text-sm text-slate-600">Power BI, DAX, semantic models, governance, executive dashboards, Tableau & Looker experience.</p>
         </div>
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">Cloud Migrations</h3>
-          <p class="mt-2 text-sm text-slate-600">On‑prem SQL/SSIS/Synapse → Fabric. GCP/AWS to Azure paths with minimal downtime.</p>
+          <h3 class="font-semibold">Salesforce & CRM</h3>
+          <p class="mt-2 text-sm text-slate-600">Salesforce data pipelines, campaign attribution, ads/CRM unification, reporting & activation.</p>
         </div>
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Advisory & Enablement</h3>
-          <p class="mt-2 text-sm text-slate-600">Architecture reviews, roadmaps, CoP sessions, and training.</p>
+          <p class="mt-2 text-sm text-slate-600">Architecture reviews, roadmaps, performance tuning, cost control, training & CoP sessions.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Work / highlights -->
+  <!-- Work -->
   <section id="work" class="border-t">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold">Selected work</h2>
-        <p class="mt-3 text-slate-600">Outcomes we’re proud of.</p>
+        <p class="mt-3 text-slate-600">Cross-industry outcomes we’re proud of.</p>
       </div>
+
       <div class="mt-10 grid lg:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">Retail: Microsoft Fabric</h3>
-          <p class="mt-2 text-sm text-slate-600">Stabilised ingest of 10B+ POS records. Faster reporting, reliable promotions analytics.</p>
+          <h3 class="font-semibold">Retail — Fabric Lakehouse</h3>
+          <p class="mt-2 text-sm text-slate-600">Stabilised ingest of 10B+ POS records on Microsoft Fabric. Faster reporting and trustworthy promotions analytics.</p>
         </div>
+
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">Financial Services: SQL/SSIS → ADF</h3>
-          <p class="mt-2 text-sm text-slate-600">Modernised ETL, reduced ops toil, improved SLAs and auditability.</p>
+          <h3 class="font-semibold">Financial Services — SQL/SSIS → ADF</h3>
+          <p class="mt-2 text-sm text-slate-600">Modernised ETL, reduced operational toil, improved SLAs & auditability across regulated datasets.</p>
         </div>
+
         <div class="rounded-2xl border p-6">
-          <h3 class="font-semibold">Marketing Analytics: Lakehouse</h3>
-          <p class="mt-2 text-sm text-slate-600">Unified ads & CRM data with versioned Delta tables for trustworthy attribution.</p>
+          <h3 class="font-semibold">Telecoms — Salesforce Pipelines</h3>
+          <p class="mt-2 text-sm text-slate-600">Integrated Salesforce, ads, and CRM data into a unified lakehouse for campaign performance & attribution.</p>
+        </div>
+
+        <!-- New: Banking FIC project -->
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Banking — SSIS → FIC Reporting (goAML)</h3>
+          <p class="mt-2 text-sm text-slate-600">Built SSIS-based pipelines to transform and submit transactional reports to the Financial Intelligence Centre (goAML) with schema validation, secure delivery, and auditable run history.</p>
+        </div>
+
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Healthcare — Cloud Migration & BI</h3>
+          <p class="mt-2 text-sm text-slate-600">Lift-and-shift + refactor to Azure/AWS with governed models and exec-ready Power BI dashboards.</p>
+        </div>
+
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Cross-Industry — Performance & Reliability</h3>
+          <p class="mt-2 text-sm text-slate-600">Fixed fan-out joins, tuned Delta/SQL, implemented checkpoints & observability to meet strict SLAs.</p>
         </div>
       </div>
     </div>
@@ -162,22 +178,23 @@
           <h2 class="text-3xl font-bold">About DataPEG</h2>
           <p class="mt-4 text-slate-600">
             We’re a South African consultancy led by Senior Data Engineer Bongani Maswanganyi.
-            We help teams deliver durable data platforms with clean architecture, versioning, and
-            quality baked in—so the business can move with confidence.
+            We deliver durable platforms and software across Azure, AWS, and GCP — and on-prem with SQL Server/SSIS/T-SQL —
+            with clean architecture, versioning, and quality baked in so the business can move with confidence.
           </p>
           <ul class="mt-6 space-y-2 text-slate-700 text-sm list-disc ml-5">
-            <li>Medallion architecture: Bronze → Silver → Gold with Delta CDF.</li>
-            <li>Config‑driven pipelines, schema evolution, checkpoint tables.</li>
-            <li>Performance tuning for joins, file sizes, and partitioning.</li>
-            <li>Power BI semantic models and governance best practices.</li>
+            <li>Medallion architecture: Bronze → Silver → Gold with Delta (CDF) & time travel.</li>
+            <li>Config-driven pipelines, schema evolution, checkpoints & idempotent merges.</li>
+            <li>Performance tuning for joins, partitioning, file sizes & storage tiers.</li>
+            <li>Power BI semantic models, governance, and adoption best practices.</li>
           </ul>
         </div>
         <div class="rounded-2xl border p-6">
           <h3 class="font-semibold">Quick facts</h3>
           <dl class="mt-3 space-y-2 text-sm">
             <div class="flex justify-between"><dt>HQ</dt><dd>Centurion, Gauteng</dd></div>
-            <div class="flex justify-between"><dt>Cloud</dt><dd>Microsoft Azure & Fabric</dd></div>
-            <div class="flex justify-between"><dt>Also</dt><dd>GCP, AWS</dd></div>
+            <div class="flex justify-between"><dt>Cloud</dt><dd>Azure • AWS • GCP</dd></div>
+            <div class="flex justify-between"><dt>On-Prem</dt><dd>SQL Server • SSIS • T-SQL</dd></div>
+            <div class="flex justify-between"><dt>CRM</dt><dd>Salesforce (data & reporting)</dd></div>
             <div class="flex justify-between"><dt>Contact</dt><dd><a href="#contact" class="underline">See below</a></dd></div>
           </dl>
         </div>
@@ -190,14 +207,15 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <h2 class="text-3xl font-bold">Let’s talk</h2>
       <p class="mt-3 text-slate-600">Tell us about your project. We’ll respond promptly.</p>
-      <form id="contactForm" class="mt-8 grid gap-4">
+
+      <form id="contactForm" class="mt-8 grid gap-4" aria-label="Contact form">
         <div class="grid sm:grid-cols-2 gap-4">
-          <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border px-4 py-3">
-          <input required type="email" name="email" placeholder="Your email" class="w-full rounded-xl border px-4 py-3">
+          <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border px-4 py-3" aria-label="Your name">
+          <input required type="email" name="email" placeholder="Your email" class="w-full rounded-xl border px-4 py-3" aria-label="Your email">
         </div>
-        <input type="text" name="company" placeholder="Company (optional)" class="w-full rounded-xl border px-4 py-3">
-        <textarea required name="message" rows="4" placeholder="Project details…" class="w-full rounded-xl border px-4 py-3"></textarea>
-        <div class="hp"><label>Leave this empty</label><input type="text" name="url"></div>
+        <input type="text" name="company" placeholder="Company (optional)" class="w-full rounded-xl border px-4 py-3" aria-label="Company">
+        <textarea required name="message" rows="4" placeholder="Project details…" class="w-full rounded-xl border px-4 py-3" aria-label="Message"></textarea>
+        <div class="hp"><label>Leave this empty</label><input type="text" name="url" tabindex="-1" autocomplete="off"></div>
         <div class="flex items-center gap-3">
           <button type="submit" class="rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">Send message</button>
           <a href="mailto:info@datapeg.co.za" class="text-sm underline">Or email info@datapeg.co.za</a>
@@ -225,30 +243,44 @@
     const menuBtn = document.getElementById('menuBtn');
     const mobileNav = document.getElementById('mobileNav');
     if (menuBtn) {
-      menuBtn.addEventListener('click', () => {
-        mobileNav.classList.toggle('hidden');
-      });
+      menuBtn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
     }
+
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Simple mailto fallback submit (no backend). Adjust 'to' address to your inbox.
+    // Contact form -> Vercel API -> Resend
     const form = document.getElementById('contactForm');
     const formMsg = document.getElementById('formMsg');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      if (data.get('url')) return; // honeypot
 
-      const subject = encodeURIComponent('New enquiry from ' + data.get('name'));
-      const body = encodeURIComponent(
-        'Name: ' + data.get('name') + '\n' +
-        'Email: ' + data.get('email') + '\n' +
-        'Company: ' + (data.get('company') || '-') + '\n\n' +
-        (data.get('message') || '')
-      );
-      window.location.href = `mailto:hello@datapeg.co.za?subject=${subject}&body=${body}`;
-      formMsg.textContent = 'Opening your email app to send the message…';
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fields = Object.fromEntries(new FormData(form));
+
+      // honeypot
+      if (fields.url) return;
+
+      formMsg.textContent = "Sending…";
+
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: fields.name,
+            email: fields.email,
+            company: fields.company || "-",
+            message: fields.message
+          })
+        });
+        const text = await res.text();
+        if (!res.ok) throw new Error(text || "Failed to send");
+        form.reset();
+        formMsg.textContent = "✅ Thanks! Your message was sent.";
+      } catch (err) {
+        console.error(err);
+        formMsg.textContent = "❌ Error sending message. Please try again or email info@datapeg.co.za.";
+      }
     });
   </script>
 </body>
