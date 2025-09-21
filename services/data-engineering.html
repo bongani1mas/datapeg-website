@@ -1,0 +1,467 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DataPEG — Data Engineering, Custom Software, Training & Workshops</title>
+  <meta name="description"
+    content="DataPEG helps organisations build dependable platforms, software, and insights that drive lasting business value.">
+  <meta property="og:title" content="DataPEG — People, Engineering, & Growth">
+  <meta property="og:description"
+    content="Data platforms, system integrations, business intelligence, customer engagement,
+            and modern data architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.datapeg.co.za/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hp {
+      position: absolute;
+      left: -5000px;
+    }
+  </style>
+</head>
+
+
+
+
+
+<body class="bg-white text-slate-900 antialiased">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#home" class="flex items-center gap-2 font-semibold">
+          <img src="/assets/logo.svg" alt="DataPEG" class="h-7 w-7" />
+          <span>DataPEG</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-slate-600">Services</a>
+          <a href="#work" class="hover:text-slate-600">Work</a>
+          <a href="#about" class="hover:text-slate-600">About</a>
+          <a href="#contact" class="hover:text-slate-600">Contact</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl border px-3 py-1.5 hover:bg-slate-50">
+            Get in touch
+          </a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-1.5"
+          aria-label="Open menu">
+          Menu
+        </button>
+      </div>
+    </div>
+    <!-- Mobile -->
+    <div id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#services" class="block">Services</a>
+        <a href="#work" class="block">Work</a>
+        <a href="#about" class="block">About</a>
+        <a href="#contact" class="block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+    <!-- Main -->
+  <main id="home">
+    <!-- Hero -->
+    <section class="border-b bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+              Data engineering that delivers <span class="whitespace-nowrap">real-world</span> impact
+            </h1>
+            <p class="mt-5 text-lg text-slate-600 max-w-2xl">
+              We design, build, and operate dependable data platforms—turning fragmented data into
+              trustworthy, actionable assets. From ingestion to BI, we keep reliability, scalability,
+              and cost-efficiency front and center.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#contact" class="inline-flex items-center rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">
+                Start a project
+              </a>
+              <a href="#work" class="inline-flex items-center rounded-2xl border px-5 py-3 hover:bg-slate-50">
+                See our approach
+              </a>
+            </div>
+            <!-- <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-slate-600">
+              <div class="rounded-xl bg-white border p-4">
+                <dt class="font-semibold">Cloud & On-prem</dt>
+                <dd class="mt-1">Azure • AWS • GCP • SQL/SSIS</dd>
+              </div>
+              <div class="rounded-xl bg-white border p-4">
+                <dt class="font-semibold">Architectures</dt>
+                <dd class="mt-1">Lakehouse • Delta • Medallion</dd>
+              </div>
+              <div class="rounded-xl bg-white border p-4">
+                <dt class="font-semibold">Workloads</dt>
+                <dd class="mt-1">Batch • Streaming • APIs</dd>
+              </div>
+              <div class="rounded-xl bg-white border p-4">
+                <dt class="font-semibold">Outcomes</dt>
+                <dd class="mt-1">Trust • Speed • Savings</dd>
+              </div>
+            </dl> -->
+          </div>
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl border bg-white p-6">
+              <h3 class="text-lg font-semibold">What you get</h3>
+              <ul class="mt-4 space-y-3 text-slate-700">
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-slate-900"></span> Robust ingestion & ELT pipelines</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-slate-900"></span> Clean, modelled data layers (bronze → gold)</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-slate-900"></span> Data quality, lineage, and governance baked in</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-slate-900"></span> Performance & cost optimisation with monitoring</li>
+                <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-slate-900"></span> BI-ready outputs for Power BI & analytics</li>
+              </ul>
+              <a href="#services" class="mt-6 inline-block text-sm underline">Explore our services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <h2 class="text-3xl font-bold">Data engineering services</h2>
+        <p class="mt-3 text-slate-600 max-w-3xl">
+          Engagements tailored to where you are—greenfield builds, platform modernisation, or focused optimisation sprints.
+        </p>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="rounded-2xl border p-6">
+            <h3 class="font-semibold">Platform modernisation</h3>
+            <p class="mt-2 text-slate-600">Migrate from legacy SQL/SSIS to modern lakehouse patterns with Delta and medallion layers.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Landing zones & security baselines</li>
+              <li>OneLake/ADLS, Warehouses, Lakehouses</li>
+              <li>Cost-aware storage & compute design</li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border p-6">
+            <h3 class="font-semibold">Ingestion & ELT pipelines</h3>
+            <p class="mt-2 text-slate-600">Reliable, observable data movement—batch and streaming—designed for scale.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>APIs, files, DB replication, CDC</li>
+              <li>Config-driven orchestration</li>
+              <li>Retry, idempotency, alerts</li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border p-6">
+            <h3 class="font-semibold">Data quality & governance</h3>
+            <p class="mt-2 text-slate-600">Trustworthy datasets with rules, profiling, lineage, and audit controls.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Schema evolution & contracts</li>
+              <li>DQ checks, validation, quarantine</li>
+              <li>Metadata, lineage, and stewardship</li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border p-6">
+            <h3 class="font-semibold">Performance & cost tuning</h3>
+            <p class="mt-2 text-slate-600">Speed up pipelines and reduce spend—without sacrificing reliability.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Partitioning, z-order, caching</li>
+              <li>Query/profile analysis</li>
+              <li>Right-sizing & auto-scaling</li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border p-6">
+            <h3 class="font-semibold">Real-time & streaming</h3>
+            <p class="mt-2 text-slate-600">Low-latency data for operational visibility and event-driven workflows.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Kafka/Event Hubs architectures</li>
+              <li>CDC → curated gold feeds</li>
+              <li>Exactly-once semantics</li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl border p-6">
+            <h3 class="font-semibold">BI-ready modelling</h3>
+            <p class="mt-2 text-slate-600">Curated, documented datasets ready for Power BI and analytics teams.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Dimensional & domain models</li>
+              <li>Semantic layer handover</li>
+              <li>Performance-optimized outputs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="work" class="border-t">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <h2 class="text-3xl font-bold">Our approach</h2>
+        <p class="mt-3 text-slate-600 max-w-3xl">
+          Lightweight governance, fast iterations, and measurable outcomes. We deliver in weeks—not months.
+        </p>
+
+        <ol class="mt-10 grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-4 text-sm">
+          <li class="rounded-2xl border p-4 bg-white">
+            <span class="text-xs text-slate-500">01</span>
+            <h3 class="mt-2 font-semibold">Discover</h3>
+            <p class="mt-1 text-slate-600">Goals, constraints, data landscape.</p>
+          </li>
+          <li class="rounded-2xl border p-4 bg-white">
+            <span class="text-xs text-slate-500">02</span>
+            <h3 class="mt-2 font-semibold">Design</h3>
+            <p class="mt-1 text-slate-600">Target architecture & roadmap.</p>
+          </li>
+          <li class="rounded-2xl border p-4 bg-white">
+            <span class="text-xs text-slate-500">03</span>
+            <h3 class="mt-2 font-semibold">Build</h3>
+            <p class="mt-1 text-slate-600">Pipelines, models, observability.</p>
+          </li>
+          <li class="rounded-2xl border p-4 bg-white">
+            <span class="text-xs text-slate-500">04</span>
+            <h3 class="mt-2 font-semibold">Validate</h3>
+            <p class="mt-1 text-slate-600">DQ rules, tests, UAT sign-off.</p>
+          </li>
+          <li class="rounded-2xl border p-4 bg-white">
+            <span class="text-xs text-slate-500">05</span>
+            <h3 class="mt-2 font-semibold">Operate</h3>
+            <p class="mt-1 text-slate-600">Runbooks, SLAs, cost controls.</p>
+          </li>
+          <li class="rounded-2xl border p-4 bg-white">
+            <span class="text-xs text-slate-500">06</span>
+            <h3 class="mt-2 font-semibold">Evolve</h3>
+            <p class="mt-1 text-slate-600">New sources, features, scale.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Capabilities / Tooling chips -->
+    <section class="bg-slate-50 border-t">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <h3 class="text-xl font-semibold">Platforms & skills</h3>
+        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 rounded-full border bg-white">Microsoft Fabric</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Azure Synapse</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Databricks</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Delta Lake</span>
+          <span class="px-3 py-1 rounded-full border bg-white">ADLS / OneLake</span>
+          <span class="px-3 py-1 rounded-full border bg-white">SQL / T-SQL</span>
+          <span class="px-3 py-1 rounded-full border bg-white">PySpark</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Power BI</span>
+          <span class="px-3 py-1 rounded-full border bg-white">APIs & Integrations</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Orchestration</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Streaming</span>
+          <span class="px-3 py-1 rounded-full border bg-white">Governance & DQ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes / Mini case cards -->
+    <section class="border-t">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-bold">Proven outcomes</h2>
+        <p class="mt-3 text-slate-600 max-w-3xl">
+          We help teams move faster with less risk—unlocking reliable reporting, better customer insights, and lower TCO.
+        </p>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <article class="rounded-2xl border p-6 bg-white">
+            <h3 class="font-semibold">Retail lakehouse stabilisation</h3>
+            <p class="mt-2 text-slate-600">Optimised ingestion & modelling across billions of rows, improving report freshness and platform reliability.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Throughput up, failures down</li>
+              <li>Faster time-to-insight for BI</li>
+              <li>Clear runbooks & monitoring</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border p-6 bg-white">
+            <h3 class="font-semibold">Marketing data unification</h3>
+            <p class="mt-2 text-slate-600">APIs, ads, and CRM sources unified into gold models powering campaign and funnel analytics.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Reliable source-to-decision flow</li>
+              <li>DQ checks & data contracts</li>
+              <li>Lower cost per insight</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border p-6 bg-white">
+            <h3 class="font-semibold">Operations in near real-time</h3>
+            <p class="mt-2 text-slate-600">Event-driven pipelines deliver fresh operational metrics with robust SLAs and observability.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1.5 list-disc ml-5">
+              <li>Streaming + CDC patterns</li>
+              <li>Exactly-once guarantees</li>
+              <li>Audit, lineage, alerts</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-slate-50 border-t">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-bold">About DataPEG</h2>
+        <p class="mt-4 text-slate-600 max-w-3xl">
+          We’re a South African consultancy focused on durable engineering. Our principles are simple:
+          <span class="font-medium">clarity</span> (plain decisions and docs), <span class="font-medium">reliability</span>
+          (observability and SLAs), and <span class="font-medium">scalability</span> (design for growth and cost).
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="border-t">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-2xl font-bold">FAQs</h2>
+        <div class="mt-6 divide-y">
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium">How do you start engagements?</summary>
+            <p class="mt-2 text-slate-600">We begin with a short discovery to confirm goals and constraints, then propose a roadmap with quick wins and a fixed first sprint.</p>
+          </details>
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium">Do you work with our existing stack?</summary>
+            <p class="mt-2 text-slate-600">Yes. We integrate with your tools and standards. We focus on interoperability and clear handover.</p>
+          </details>
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium">What does handover look like?</summary>
+            <p class="mt-2 text-slate-600">Runbooks, docs, and knowledge transfer sessions. We design for maintainability from day one.</p>
+          </details>
+        </div>
+        <div class="mt-8">
+          <a href="#contact" class="inline-flex items-center rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">Talk to an engineer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <h2 class="text-3xl font-bold">Let’s talk</h2>
+      <p class="mt-3 text-slate-600">Tell us about your project. We’ll respond promptly.</p>
+
+      <form id="contactForm" class="mt-8 grid gap-4" aria-label="Contact form">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required type="text" name="name" placeholder="Your name" class="w-full rounded-xl border px-4 py-3"
+            aria-label="Your name">
+          <input required type="email" name="email" placeholder="Your email" class="w-full rounded-xl border px-4 py-3"
+            aria-label="Your email">
+        </div>
+        <input type="text" name="company" placeholder="Company (optional)" class="w-full rounded-xl border px-4 py-3"
+          aria-label="Company">
+        <textarea required name="message" rows="4" placeholder="Project details…"
+          class="w-full rounded-xl border px-4 py-3" aria-label="Message"></textarea>
+
+        <!-- Honeypot -->
+        <div class="hp"><label>Leave this empty</label><input type="text" name="url"></div>
+
+        <!-- Turnstile widget -->
+        <div class="mt-2">
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAB2NLSNEpHsUk0Kw" data-theme="light"></div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button type="submit" class="rounded-2xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">Send
+            message</button>
+          <a href="mailto:info@datapeg.co.za" class="text-sm underline">Or email info@datapeg.co.za</a>
+          <a href="https://wa.me/27813171754" class="text-sm underline" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p id="formMsg" class="text-sm text-slate-600 mt-2"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-500 flex flex-col sm:flex-row gap-3 sm:items-center justify-between">
+      <div>© <span id="year"></span> DataPEG (Pty) Ltd. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#about" class="hover:text-slate-700">About</a>
+        <a href="#services" class="hover:text-slate-700">Services</a>
+        <a href="#contact" class="hover:text-slate-700">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+    }
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form -> Vercel API -> Resend (+ Turnstile + cooldown)
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    const COOLDOWN_SEC = 60;
+
+    function lastSubmitAgo() {
+      const t = Number(localStorage.getItem('dp_last_submit') || 0);
+      return Math.floor((Date.now() - t) / 1000);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Cooldown check
+      const ago = lastSubmitAgo();
+      if (ago < COOLDOWN_SEC) {
+        formMsg.textContent = `Please wait ${COOLDOWN_SEC - ago}s before sending again.`;
+        return;
+      }
+
+      // Collect data + honeypot
+      const data = Object.fromEntries(new FormData(form));
+      if (data.url) return;
+
+      // Turnstile token
+      const token = window.turnstile?.getResponse();
+      if (!token) {
+        formMsg.textContent = "Please complete the verification.";
+        return;
+      }
+
+      formMsg.textContent = "Sending…";
+
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...data, __ts_token: token })
+        });
+
+        if (!res.ok) throw new Error(await res.text());
+
+        // Mark cooldown, clear fields, keep form visible
+        localStorage.setItem('dp_last_submit', String(Date.now()));
+        form.reset();
+        window.turnstile?.reset();
+
+        formMsg.textContent = "✅ Thanks! One of our consultants will be in touch shortly. A confirmation email has been sent.";
+      } catch (err) {
+        console.error(err);
+        formMsg.textContent = "❌ Error sending message. Please try again or email info@datapeg.co.za.";
+        window.turnstile?.reset();
+      }
+    });
+  </script>
+</body>
+
+</html>
